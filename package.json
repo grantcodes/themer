@@ -6,8 +6,15 @@
   "scripts": {
     "test": "jest"
   },
-  "author": "grantcodes",
-  "license": "ISC",
+  "repository": {
+    "url": "https://github.com/grantcodes/themer"
+  },
+  "author": {
+    "email": "mail@grant.codes",
+    "name": "Grant Richmond",
+    "url": "https://grant.codes"
+  },
+  "license": "MIT",
   "dependencies": {
     "chroma-js": "^2.1.0",
     "color-hash": "^1.0.3"
