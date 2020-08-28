@@ -1,0 +1,19 @@
+{
+  "name": "@grantcodes/themer",
+  "version": "1.0.0",
+  "description": "Generate color themes for my website",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "grantcodes",
+  "license": "ISC",
+  "dependencies": {
+    "chroma-js": "^2.1.0",
+    "color-hash": "^1.0.3"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2",
+    "rewire": "^5.0.0"
+  }
+}
