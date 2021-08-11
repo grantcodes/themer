@@ -16,11 +16,11 @@
   },
   "license": "MIT",
   "dependencies": {
-    "chroma-js": "^2.1.0",
-    "color-hash": "^1.0.3"
+    "chroma-js": "^2.1.2",
+    "color-hash": "^2.0.1"
   },
   "devDependencies": {
-    "jest": "^26.4.2",
+    "jest": "^27.0.6",
     "rewire": "^5.0.0"
   }
 }

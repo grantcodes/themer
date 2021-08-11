@@ -1,6 +1,5 @@
 const chroma = require('chroma-js')
-const ColorHash = require('color-hash')
-const colorHash = new ColorHash()
+const ColorHash = require('color-hash').default
 
 const isDark = (color) => {
   const whiteContrast = chroma.contrast(color, '#fff')
@@ -82,7 +81,9 @@ const daily = () => {
   const now = new Date()
   const year = now.getFullYear()
   const day = now.getDate() * (now.getMonth() + 1) + 365 * year
-  return createTheme(colorHash.hex(day))
+  const colorHash = new ColorHash()
+  const dayColor = colorHash.hex(day.toString())
+  return createTheme(dayColor)
 }
 
 module.exports = {
