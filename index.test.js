@@ -93,4 +93,17 @@ test('Daily theme', () => {
   expect(Array.isArray(intialTheme.gradient)).toBe(true)
   expect(intialTheme.gradient.length).toBe(6)
   expect(intialTheme).toEqual(secondTheme)
+
+  // Test with a different date
+  global.Date = class extends Date {
+    constructor(date) {
+      if (date) {
+        return super(date)
+      }
+
+      return new Date('2020-01-01')
+    }
+  }
+  const differentTheme = themer.daily()
+  expect(intialTheme).not.toEqual(differentTheme)
 })
